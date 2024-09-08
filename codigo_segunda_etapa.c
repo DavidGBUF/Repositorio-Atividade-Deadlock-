@@ -65,7 +65,7 @@ void* detectar_deadlock(void* arg) {
 
         // Verifica se ambos os mutexes estão bloqueados
         if (lock1_status != 0 && lock2_status != 0) {
-            printf("Deadlock detectado!\n");
+            printf("Pontecial Deadlock detectado!\n");
             deadlock_detectado = 1; // Define a variável para indicar que o deadlock foi detectado
         } else {
             // Se algum mutex foi adquirido, libera-o
